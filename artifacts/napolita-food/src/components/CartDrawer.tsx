@@ -6,6 +6,7 @@ import CheckoutModal from './CheckoutModal';
 
 export default function CartDrawer() {
   const { items, isOpen, closeCart, total, itemCount, updateQty, removeItem } = useCart();
+  const hasDrink = items.some(i => i.category === 'BOISSONS');
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
 
   const handleCheckout = () => {
@@ -112,23 +113,25 @@ export default function CartDrawer() {
 
               {items.length > 0 && (
                 <div className="border-t border-[#2a2a2a] p-6 bg-[#0B0B0B]">
-                  <div className="flex items-center justify-between gap-3 mb-6 p-4 border border-[var(--green)]/40 bg-[var(--green)]/10">
-                    <div className="flex items-center gap-3 min-w-0">
-                      <div className="w-9 h-9 shrink-0 rounded-full bg-[var(--green)]/15 flex items-center justify-center text-[var(--green)]">
-                        <CupSoda size={18} />
+                  {!hasDrink && (
+                    <div className="flex items-center justify-between gap-3 mb-6 p-4 border border-[#2a2a2a] bg-[#161616]">
+                      <div className="flex items-center gap-3 min-w-0">
+                        <div className="w-9 h-9 shrink-0 flex items-center justify-center text-[#888]">
+                          <CupSoda size={18} />
+                        </div>
+                        <p className="text-[#aaa] text-sm leading-tight">
+                          مخصكش مشروب؟
+                        </p>
                       </div>
-                      <p className="text-white text-sm leading-tight">
-                        مخصكش مشروب؟
-                      </p>
+                      <button
+                        onClick={handleGoToDrinks}
+                        className="shrink-0 flex items-center gap-1.5 px-4 py-2 border border-[#444] text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black hover:border-white transition-colors"
+                      >
+                        Ajouter
+                        <ArrowRight size={14} />
+                      </button>
                     </div>
-                    <button
-                      onClick={handleGoToDrinks}
-                      className="shrink-0 flex items-center gap-1.5 px-4 py-2 bg-[var(--green)] text-black text-xs font-bold uppercase tracking-widest hover:bg-white transition-colors"
-                    >
-                      Ajouter
-                      <ArrowRight size={14} />
-                    </button>
-                  </div>
+                  )}
 
                   <div className="flex justify-between text-sm mb-3">
                     <span className="text-[#888]">Subtotal:</span>
