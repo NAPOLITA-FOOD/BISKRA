@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useMenu } from '@/context/MenuContext';
 import { MenuItem, menuCategories } from '@/data/menuData';
 import { motion, AnimatePresence } from 'framer-motion';
+import ImageUploader from '@/components/ImageUploader';
 
 // ─── simple session-based password gate ──────────────────────────────────────
 // Password is read from the VITE_ADMIN_PASSWORD env var (set in Replit Secrets).
@@ -435,8 +436,8 @@ function ItemForm({
       </div>
 
       {/* image */}
-      <Field label="URL image">
-        <input value={value.image} onChange={e => set('image', e.target.value)} className={input()} placeholder="https://…" />
+      <Field label="Image">
+        <ImageUploader value={value.image} onChange={url => set('image', url)} />
       </Field>
 
       {/* checkboxes */}

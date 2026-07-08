@@ -60,3 +60,5 @@ channel = "stable-25_05"
 [userenv.shared]
 VITE_JSONBIN_BIN_ID = "6a4e1c68f5f4af5e29711681"
 VITE_ADMIN_PASSWORD = "napolita2024"
+VITE_CLOUDINARY_CLOUD_NAME = "lprhfwpu"
+VITE_CLOUDINARY_UPLOAD_PRESET = "napolita"
