@@ -3,9 +3,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
+import Admin from "@/pages/Admin";
 import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import { CartProvider } from "./context/CartContext";
+import { MenuProvider } from "./context/MenuContext";
 import CartDrawer from "./components/CartDrawer";
 import VideoLoader from "./components/VideoLoader";
 
@@ -13,6 +15,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/admin" component={Admin} />
       <Route component={NotFound} />
     </Switch>
   );
@@ -48,15 +51,17 @@ function App() {
   return (
     <>
       {loading && <VideoLoader onDone={() => setLoading(false)} />}
-      <CartProvider>
-        <TooltipProvider>
-          <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-            <Router />
-          </WouterRouter>
-          <CartDrawer />
-          <Toaster />
-        </TooltipProvider>
-      </CartProvider>
+      <MenuProvider>
+        <CartProvider>
+          <TooltipProvider>
+            <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+              <Router />
+            </WouterRouter>
+            <CartDrawer />
+            <Toaster />
+          </TooltipProvider>
+        </CartProvider>
+      </MenuProvider>
     </>
   );
 }

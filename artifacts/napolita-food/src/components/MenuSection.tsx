@@ -1,16 +1,25 @@
 import { motion, useInView } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { menuCategories, menuItems, MenuItem } from '../data/menuData';
+import { MenuItem } from '../data/menuData';
+import { useMenu } from '../context/MenuContext';
 import { useCart } from '../context/CartContext';
 import SizePicker from './SizePicker';
 
 export default function MenuSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [activeCategory, setActiveCategory] = useState(menuCategories[0]);
+  const { items: menuItems, categories: menuCategories } = useMenu();
+  const [activeCategory, setActiveCategory] = useState(menuCategories[0] ?? 'PIZZA');
   const [selectedPizza, setSelectedPizza] = useState<MenuItem | null>(null);
   const [addedPulseId, setAddedPulseId] = useState<string | null>(null);
   const { addItem } = useCart();
+
+  // keep activeCategory in sync when categories load
+  useEffect(() => {
+    if (menuCategories.length > 0 && !menuCategories.includes(activeCategory)) {
+      setActiveCategory(menuCategories[0]);
+    }
+  }, [menuCategories]);
 
   const filteredItems = menuItems.filter(item => item.category === activeCategory);
 

@@ -20,9 +20,17 @@ A single-page marketing/ordering site for a Biskra-based Italian food brand ("Na
 - `artifacts/napolita-food/` — the only active artifact (frontend)
 - `lib/db`, `lib/api-spec`, `lib/api-zod`, `lib/api-client-react` — unused backend/API scaffolding left over from before the repo's "remove backend" cleanup; not wired into the frontend
 
+## Admin Dashboard
+
+- URL: `/admin` — password-protected (password stored in `VITE_ADMIN_PASSWORD` env var, default `napolita2024`)
+- Add / edit / delete menu products; changes are persisted to JSONbin and reflected live on the storefront on next page load
+- JSONbin bin ID stored in `VITE_JSONBIN_BIN_ID` env var; master key in `VITE_JSONBIN_API_KEY` secret
+- ⚠️ Current security model: client-side password gate only. Both the API key and password are bundled in client JS (VITE_ prefix). Suitable for an internal owner tool; see Task #2 for a proper server-side proxy upgrade.
+
 ## Architecture decisions
 
 - Imported from GitHub with `artifacts/napolita-food/.replit-artifact/artifact.toml` already present but not yet registered as a live workflow; registered it manually via `configureWorkflow` (see Gotchas) rather than `createArtifact`, since the artifact directory already existed.
+- Menu data is loaded at runtime from JSONbin (bin `6a4e1c68f5f4af5e29711681`); falls back silently to hardcoded `src/data/menuData.ts` if the fetch fails.
 
 ## Product
 
