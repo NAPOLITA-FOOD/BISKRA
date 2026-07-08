@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "NAPOLITA FOOD"
+version = "1.0.0"
+id = "artifacts/napolita-food"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24531
+
+[services.development]
+run = "pnpm --filter @workspace/napolita-food run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/napolita-food", "run", "build" ]
+publicDir = "artifacts/napolita-food/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24531"
+BASE_PATH = "/"

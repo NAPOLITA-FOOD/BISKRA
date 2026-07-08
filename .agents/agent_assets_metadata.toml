@@ -1,0 +1,79 @@
+uploads = []
+
+[[generated]]
+id = "17fV7SdFTSgJ_U5kHovIs"
+uri = "file://artifacts/napolita-food/public/images/hero-oven.png"
+type = "image"
+title = "Pizza oven fire at night"
+
+[[generated]]
+id = "VkhR1PJ32sUK6UgGCzVzq"
+uri = "file://artifacts/napolita-food/public/images/story-chef-hands.png"
+type = "image"
+title = "Chef stretching pizza dough"
+
+[[generated]]
+id = "_WgaFKXE6rMWSvgXwIHK0"
+uri = "file://artifacts/napolita-food/public/images/chef-portrait.png"
+type = "image"
+title = "Italian chef in dark kitchen"
+
+[[generated]]
+id = "BMivgFtKh3BwXFzlsbivY"
+uri = "file://artifacts/napolita-food/public/images/menu-margherita.png"
+type = "image"
+title = "Margherita pizza overhead"
+
+[[generated]]
+id = "GOSpuzRu8P19-kwSjEGOf"
+uri = "file://artifacts/napolita-food/public/images/menu-diavola.png"
+type = "image"
+title = "Diavola spicy pizza overhead"
+
+[[generated]]
+id = "GowWOMPqjqwZxDvROMXkC"
+uri = "file://artifacts/napolita-food/public/images/menu-four-cheese.png"
+type = "image"
+title = "Four Cheese pizza overhead"
+
+[[generated]]
+id = "OT2mro6Sofh17Aj7J00sX"
+uri = "file://artifacts/napolita-food/public/images/menu-carbonara.png"
+type = "image"
+title = "Pasta carbonara steaming"
+
+[[generated]]
+id = "5YN_jDhupEcIGe4WKAL6U"
+uri = "file://artifacts/napolita-food/public/images/menu-tiramisu.png"
+type = "image"
+title = "Tiramisu plated elegantly"
+
+[[generated]]
+id = "nOo2UP1qtOE9cMeaXNRuw"
+uri = "file://artifacts/napolita-food/public/images/menu-limoncello.png"
+type = "image"
+title = "Limoncello on dark marble"
+
+[[generated]]
+id = "C8vC7TvCO_FFuDH3Vfohn"
+uri = "file://artifacts/napolita-food/public/images/gallery-interior.png"
+type = "image"
+title = "Warm amber restaurant interior"
+
+[[generated]]
+id = "W-8pAWwfLBVTzbgQpLZfM"
+uri = "file://artifacts/napolita-food/public/images/reservation-interior.png"
+type = "image"
+title = "Luxury interior"
+
+[[generated]]
+id = "mUbk05sm34Xo0SYiQI_iW"
+uri = "file://attached_assets/generated_images/italian_delivery_scooter_rider_a7d2.png"
+type = "image"
+title = "generated_image"
+
+[[outputs]]
+id = "Od_BYWMMltA1ta8ZNnRzK"
+uri = "file://napolita-food-dist.tar.gz"
+type = "unspecified"
+title = "NAPOLITA FOOD — Production Build"

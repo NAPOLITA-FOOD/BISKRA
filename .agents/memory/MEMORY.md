@@ -1,0 +1,1 @@
+- [Imported artifact with pre-existing artifact.toml](imported-artifact-toml.md) — createArtifact fails if dir exists; register the workflow manually instead.

@@ -1,0 +1,99 @@
+إذا كنت تريد موقع NAPOLITA FOOD بمستوى مواقع الترند العالمية (Apple × Ferrari × Fine Dining)، فجرب هذا البرومبت:
+
+Create an ultra-premium Italian restaurant website for NAPOLITA FOOD.
+
+Style:
+Luxury cinematic storytelling, Apple-level minimalism, modern Italian aesthetics, high-end restaurant branding, immersive scrolling experience.
+
+Color palette:
+Deep black, pure white, subtle Italian green and red accents, soft warm lighting.
+
+Hero Section:
+Full-screen cinematic video background.
+A luxury Italian restaurant entrance at night.
+The camera slowly approaches the entrance.
+The door opens automatically.
+Warm light escapes from inside.
+The camera enters the restaurant.
+Fresh pizza comes out of a stone oven in slow motion.
+Floating flour particles and cinematic depth of field.
+
+Typography:
+Massive bold headlines.
+Elegant spacing.
+Modern luxury branding.
+
+Animations:
+Smooth GSAP animations.
+Parallax scrolling.
+Elements reveal on scroll.
+Floating ingredients animation.
+Micro-interactions on hover.
+Glassmorphism effects.
+Motion blur transitions.
+
+Sections:
+
+1. Hero Experience
+Large statement:
+"AUTHENTIC ITALIAN EXPERIENCE"
+
+2. Story Section
+The history of NAPOLITA FOOD.
+Full-screen scroll storytelling.
+
+3. Signature Menu
+Luxury menu cards.
+Large food photography.
+Smooth hover transitions.
+3D tilt effect.
+
+4. Pizza Builder
+Interactive pizza customization.
+Real-time visual updates.
+Premium UI.
+
+5. Delivery Experience
+Animated delivery scooter.
+Route tracking animation.
+Estimated delivery countdown.
+
+6. Chef Section
+Full-screen chef portrait.
+Parallax image effects.
+Elegant typography.
+
+7. Gallery
+Masonry layout.
+Ultra high-resolution food photography.
+Smooth zoom animations.
+
+8. Testimonials
+Luxury glass cards.
+Animated rating counters.
+
+9. Reservation Section
+Premium booking experience.
+Modern form design.
+
+10. Footer
+Dark luxury design.
+Glowing logo.
+Social media icons.
+Italian-inspired accents.
+
+Technical:
+Responsive mobile-first design.
+4K visuals.
+GSAP.
+Lenis smooth scrolling.
+Three.js subtle effects.
+Performance optimized.
+Modern 2026 web design trends.
+Award-winning Awwwards style.
+
+ولـ Kling AI لصناعة فيديو الهيرو:
+
+Ultra cinematic Italian restaurant entrance at night, luxury atmosphere, warm golden lights, camera slowly moving toward a premium restaurant door, realistic reflections, depth of field, volumetric lighting, the door slowly opens, camera enters the restaurant, Italian chef preparing authentic pizza, stone oven glowing with fire, pizza coming out in slow motion, flour particles floating in the air, cinematic food commercial, black luxury aesthetic, dramatic lighting, ultra realistic, anamorphic lens, shallow depth of field, film grain, 4K, masterpiece, premium commercial quality, smooth camera movement, vertical composition for mobile website hero video.
+
+هذا النوع من الهيرو وحده يمكن أن يجعل الزائر يشعر أنه دخل مطعمًا فاخرًا قبل أن يرى القائمة.
