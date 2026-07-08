@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useMenu } from '@/context/MenuContext';
 import { MenuItem, menuCategories } from '@/data/menuData';
 import { motion, AnimatePresence } from 'framer-motion';
-import ImageUploader from '@/components/ImageUploader';
 import { LogOut, Plus, Pencil, Trash2 } from 'lucide-react';
 
 // ─── password gate ────────────────────────────────────────────────────────────
@@ -489,8 +488,8 @@ function ItemForm({
       </div>
 
       {/* Image */}
-      <Field label="Image">
-        <ImageUploader value={value.image} onChange={url => set('image', url)} />
+      <Field label="URL Image">
+        <input value={value.image} onChange={e => set('image', e.target.value)} className={inp()} placeholder="https://…" />
       </Field>
 
       {/* Actions */}
