@@ -70,6 +70,7 @@ export default function CartDrawer() {
                       <div className="flex-1">
                         <div className="flex justify-between items-start mb-1">
                           <div>
+                            <p className="text-[#666] text-[10px] font-sans uppercase tracking-widest mb-0.5">{item.category}</p>
                             <h4 className="text-white font-serif text-lg leading-none">{item.name}</h4>
                             {item.size && (
                               <span className="inline-block mt-1 px-2 py-0.5 bg-[#1A1A1A] text-[#888] text-xs border border-[#2a2a2a]">
