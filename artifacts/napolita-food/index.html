@@ -13,6 +13,21 @@
     <meta name="twitter:title" content="NAPOLITA FOOD" />
     <meta name="twitter:description" content="NAPOLITA FOOD — built on Replit. Update this description to reflect the app." />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script>
+    // Restore path encoded by 404.html redirect (SPA GitHub Pages fix)
+    (function(l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function(s) {
+          return s.replace(/~and~/g, '&');
+        });
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded[0] +
+          (decoded[1] ? '&' + decoded[1].slice(1) : '') +
+          l.hash
+        );
+      }
+    }(window.location));
+  </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
